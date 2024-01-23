@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-6">Functional 
+            <span class="font-bold text-violet-700">Baap Er Bank</span></h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto w-9/12 text-white rounded-lg">
+                <div class="bg-green-400 p-8">
+                    <h1 class="text-2xl">Deposit</h1>
+                    
+                    <h2  class="text-5xl">$ <span id="deposite-total">00</span></h2>
+                </div>
+                <div class="bg-red-100 p-8">
+                    <h1 class="text-2xl">withdraw</h1>
+                    
+                    <h2 class="text-5xl">$ <span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-violet-500 p-8">
+                    <h1 class="text-2xl">Balance</h1>
+                    
+                    <h2 class="text-5xl">$ <span id="balance-total">1240</span></h2>
+                </div>
+            </div>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto w-9/12  rounded-lg">
+                <div class="bg-purple-400 p-8">
+                    <h1 class="text-2xl mb-4 text-white"> Please Deposit</h1>
+                    
+                    <input id="deposite-field" class="w-9/12 block px-3 mb-2 " type="text" name=""  placeholder="$ Amount You Want To Deposit">
+                        
+                       <button id="btn-deposite" class="bg-amber-600 mt-2 hover:bg-sky-700 px-8 py-2 rounded-lg text-white font-medium ">Deposit</button>
+                   
+                </div>
+                <div class="bg-fuchsia-600 p-8">
+                    <h1 class="text-2xl mb-4 text-white">Please withdraw</h1>
+                    
+                    <input id="withdraw-field" class="w-9/12 block px-3 mb-2 " type="email" name="" id="user-email" placeholder="$ Amount You Want To withdraw">
+                        
+                       <button id="btn-withdraw" class="bg-amber-600 mt-2 hover:bg-sky-700 px-8 py-2 rounded-lg text-white font-medium ">withdraw</button>
+                   
+                </div>
+                
+        </section>
+    </main>
+
+    <script src="js/depisit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
